@@ -1,0 +1,94 @@
+.map-fullscreen {
+   margin: 0px;
+   padding: 0px;
+   width: 100%;
+   height: 100%;
+}
+
+.ol-attribution.ol-logo-only {
+    top: 4em;
+}
+
+.ol-control button {
+  color: white;
+}
+
+.ol-control button {
+  background-color: @color-yellow-opac;
+}
+
+.ol-control button:hover {
+  background-color: @color-yellow-opac;
+}
+
+.ol-control button:focus {
+  background-color: @color-yellow-opac;
+  box-shadow: none;
+}
+
+.ol-control button:active {
+  text-decoration: none;
+  background-color: @color-yellow-opac;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  cursor: pointer;
+  outline: none;
+}
+
+.ol-zoom .ol-zoom-in, .ol-zoom .ol-zoom-out {
+  font-size: 28px;
+  border-radius: 2px 2px 0 0;
+}
+
+@media only screen and (max-device-width : 480px) {
+  .ol-popup {
+    position: fixed;
+    background: white;
+    top: 7px;
+    left: 7px;
+    right: 7px;
+    bottom: 100px;
+    z-index: 1000;
+    #popup-content {
+      overflow: auto;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .ol-popup:before,
+  .ol-popup:after {
+    border: none;
+  }
+}
+
+.search-bar-holder {
+  position: fixed;
+  width: 400px;
+  right: 69px;
+  top: 9px;
+  z-index: 100;
+  @media only screen and (max-device-width : 480px) {
+    right: 50px;
+    left: 10px;
+    width: auto;
+  }
+  .search-tools {
+    height: 100%;
+    overflow: auto;
+  }
+  .search-results {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: white;
+    margin-top: -16px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0;
+  }
+  .result-list {
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
